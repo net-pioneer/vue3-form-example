@@ -11,11 +11,11 @@ abstract class BaseRequest{
             }
         });
         this.axios_instance.interceptors.request.use((config) => {
-
+            return config;
         });
         this.axios_instance.interceptors.response.use(
             async (response) => {
-
+                return response;
             },
             (error) => {
                 console.error("Error fetching data UseRequest");
