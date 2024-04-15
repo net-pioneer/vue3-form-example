@@ -1,11 +1,11 @@
 vue3-form
 
-- Typscript
-- Anonations and Decoration
+- Typescript
+- Annotations and Decorators
 - Async Http Request.
 - Form Wizard
 
-- pouya prs :)
+pouya prs :)
 
 
 it's requested test task from miss Hadddad in Linkdin 
