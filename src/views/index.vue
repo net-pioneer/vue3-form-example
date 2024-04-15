@@ -6,13 +6,13 @@
           <div v-if="currentStep === steps.fillUserName">
             <p>{{$t('form_wizard_title1')}}</p>
             <div class="col-md-6 mt-5">
-              <x-input :title="$t('form_username')" v-model:model-value="form.username" @invalid="allowChangePage=false" @valid="allowChangePage=true"/>
+              <x-input id="username" :title="$t('form_username')" v-model:model-value="form.username" @invalid="allowChangePage=false" @valid="allowChangePage=true"/>
             </div>
           </div>
           <div v-else-if="currentStep === steps.fillEmail">
             <p>{{$t('form_wizard_title2')}}</p>
             <div class="col-md-6 mt-5">
-              <x-input :title="$t('form_email')" v-model:model-value="form.email" @invalid="allowChangePage=false" @valid="allowChangePage=true"/>
+              <x-input id="email" :title="$t('form_email')" v-model:model-value="form.email" @invalid="allowChangePage=false" @valid="allowChangePage=true"/>
             </div>
           </div>
           <div v-else>
