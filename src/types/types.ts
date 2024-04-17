@@ -1,6 +1,7 @@
 export interface formModel{
     value:string
     _decorator:string;
+    _tabId?:number;
 }
 export interface elProperty{
     Required?:boolean,

@@ -8,8 +8,8 @@ const i18nLangs_en = {
     form_email:'Email :',
     form_wizard_title3:'EM ! you have submitted these Info!',
     validation:{
-        EMAIL:'The Email Is Invalid ! lol',
-        REQUIRED:'Fill Out this Form mate !'
+        EMAIL:'{0} is not Email',
+        REQUIRED:'{0} is Required'
     }
 }
 export default i18nLangs_en;
