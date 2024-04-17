@@ -1,6 +1,6 @@
 <template>
   <div class="form-group">
-    <label :for="id">{{ title }}<span class="text-danger fw-bold">*</span></label>
+    <label :for="id">{{ title }}<span class="text-danger fw-bold" v-if="validateFlag.includes('REQUIRED')">*</span></label>
     <input type="text" ref="inputbox" v-model="modelValue.value" class="form-control" value="" :id="id" :name="id" >
   </div>
 </template>
