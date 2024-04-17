@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form @submit.prevent="handleForm">
+    <form @submit.prevent="submitForm">
       <div class="w-50 m-auto mt-5 form-wizard">
         <div class="alert alert-danger" v-if="formErrors.length !== 0">
           <ul v-for="(err,index) in formErrors" :key="index">
@@ -82,11 +82,6 @@ export default {
     const prevPage = ()=>{
       currentStep.value--;
     }
-    const handleForm = ()=>{
-      if(currentStep.value === steps.review){
-        submitForm();
-      }
-    }
     const submitForm = async ()=>{
       const payload = toReactive(form);
       const res = await http.post<submitResponse>("/submit.json",loading,payload);
@@ -95,11 +90,7 @@ export default {
         alert("submitted Id is "  + res.data.id);
       }
     }
-
-
-
     return {
-      handleForm,
       steps,
       currentStep,
       form,
