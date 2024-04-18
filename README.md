@@ -11,8 +11,10 @@ vue3-form
   class formWizardPayload{
     @Required
     username:formModel
+
     @Email
     email:formModel
+
     @Required
     @Min(5)
     @Password
