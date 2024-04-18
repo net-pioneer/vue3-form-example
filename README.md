@@ -17,6 +17,7 @@ vue3-form
     @Min(5)
     @Password
     password:formModel
+
     tellphone:formModel
 }
 ```
