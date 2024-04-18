@@ -23,4 +23,6 @@ vue3-form
 
     tellphone:formModel
 }
+
+const form = reactive(new formWizardPayload());
 ```
