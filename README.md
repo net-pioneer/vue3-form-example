@@ -10,10 +10,13 @@ vue3-form
 ```javascript
   class formWizardPayload{
     @Required
-    @TAB(1)
     username:formModel
     @Email
     email:formModel
+    @Required
+    @Min(5)
+    @Password
+    password:formModel
     tellphone:formModel
 }
 ```
