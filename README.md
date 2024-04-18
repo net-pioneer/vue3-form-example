@@ -4,6 +4,7 @@ vue3-form
 - Annotations and Decorators
 - Async Http Request.
 - Form Wizard
+- Vue3 Composition APi
 
 
 ```javascript
